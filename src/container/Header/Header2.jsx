@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 //import { images } from '../../constants';
 import { AppWrap } from '../../wrapper';
 import Profile from '../../assets/3.png';
+import Resume from '../../assets/Resume.pdf';
 
 const scaleVariants = {
   whileInView: {
@@ -32,6 +33,9 @@ const Header = () => {
           industry. I'm specialized in front-end development. You can check out
           my work below
         </p>
+        <a href={Resume} className='button' download={Resume}>
+          Download Resume
+        </a>
       </motion.div>
 
       <motion.div
